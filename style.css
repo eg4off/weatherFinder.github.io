@@ -1,0 +1,90 @@
+    body {
+    background: url(https://orig13.deviantart.net/64e8/f/2010/230/0/6/skies_of_blue_by_naturedrop.jpg);
+}
+
+.world-weather{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#current-weather-details, #input-weather-details, #voice-weather-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 5% auto;
+    padding: 25px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: hsla(216, 100%, 60%, 0.8);
+}
+
+ul li , #location, #inputed-location, #voice-location{
+    list-style-type: none;
+    font-size: 21px;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'Fresca', sans-serif;
+    letter-spacing: 0.2px;
+}
+
+#getWeather, #findButton, #voiceButton{
+    padding: 12px 14px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Fresca', sans-serif;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    color: hsl(216, 100%, 60%);
+    transition: 0.5s;
+}
+
+#getWeather:hover, #findButton:hover, #voiceButton:hover{
+    background-color: hsla(216, 100%, 60%, 0.8);
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+#weather-summary, #input-weather-summary, #voice-weather-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 1em 2em;
+    border-radius: 10px;
+    font-family: 'Fresca', sans-serif;
+    font-size: 20px;
+    border: 2px solid black;
+    color: #FFFFFF;
+    padding: 10px;
+    line-height: 18px;
+    opacity: 0.8;
+}
+
+#city, #voice{
+    margin: auto;
+    padding: 0.5em 0.2em;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-size: 1em;
+    width: 55%;
+    color: #3385ff;
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+     color: #3385ff; 
+     font-size: 0.8em;
+}
+
+.words{
+    text-align: center;
+}

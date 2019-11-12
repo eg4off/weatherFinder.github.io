@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather finder</title>
+</head>
+<body>
+    <div class="world-weather">
+        <div id="current-weather-details">
+            <span id="location"></span>
+            <ul>
+                <li id="current-humidity">-</li>
+                <li id="current-pressure">-</li>
+                <li id="current-temperature">-</li>
+                <li id="current-wind-speed">-</li>
+                <li id="current-icon"></li>
+            </ul>
+            <p id="weather-summary"></p>
+            <button id="getWeather" onclick="getWheater()">Get Current Weather</button>
+        </div>
+        <div id="input-weather-details">
+                <span id="inputed-location"></span>
+                <ul>
+                    <li id="input-humidity">-</li>
+                    <li id="input-pressure">-</li>
+                    <li id="input-temperature">-</li>
+                    <li id="input-wind-speed">-</li>
+                    <li id="input-icon"></li>
+                </ul>
+                <p id="input-weather-summary"></p>
+            <button id="findButton">Get city Weather</button>
+                <input type="text" id="city" placeholder="Input the city" >
+        </div>
+        <div id="voice-weather-details">
+                <span id="voice-location"></span>
+                <ul>
+                    <li id="voice-humidity">-</li>
+                    <li id="voice-pressure">-</li>
+                    <li id="voice-temperature">-</li>
+                    <li id="voice-wind-speed">-</li>
+                    <li id="voice-icon"></li>
+                </ul>
+                <p id="voice-weather-summary"></p>
+                <div class="words" id="voice" contenteditable>
+                    <p id="voiceValue"></p>
+                    <!-- <input id="voiceValue" type="text"> -->
+                </div>
+        </div>
+    </div>      
+    <script src="main.js"></script>
+</body>
+</html>
